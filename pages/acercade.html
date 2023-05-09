@@ -10,16 +10,43 @@
 </head>
 <body>
     <header>
-        <a href="../index.html"><h1>Lara´s Boutique</h1></a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/productos.html">Productos</a></li>
-                <li><a href="../pages/ofertas.html">Ofertas</a></li>
-                <li><a href="../pages/acercade.html">Acerca de</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Lara´s Boutique</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../pages/acercade.html">Acerca de</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/ofertas.html">Ofertas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../pages/remeras.html">Remeras</a></li>
+                      <li><a class="dropdown-item" href="../pages/pantalones.html">Pantalones</a></li>
+                      <li><a class="dropdown-item" href="../pages/abrigo.html">Abrigo</a></li>
+                      <li><a class="dropdown-item" href="../pages/calzado.html">Calzado</a></li>
+                      <li><a class="dropdown-item" href="../pages/accesorios.html">Accesorios</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <h2 class="acerca-de">Acerca de Nosotros</h2>
@@ -38,7 +65,7 @@
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis consectetur vitae autem rerum esse sequi ipsam nihil eos illum libero. Enim vel illum, veritatis quaerat itaque sed perferendis quam nostrum.</p>
                     </div>
                   </div>
                 </div>
@@ -50,7 +77,7 @@
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laboriosam nesciunt nihil animi assumenda eligendi maxime magnam obcaecati, velit consequuntur eos soluta minus dolor sit porro, quasi esse cumque molestias!</p>
                     </div>
                   </div>
                 </div>
@@ -62,7 +89,7 @@
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus numquam consequatur velit fuga, minus aut iusto dolorum repudiandae dicta reiciendis consectetur molestias, mollitia obcaecati accusantium ipsa ipsum tempore! Libero, quibusdam!</p>
                     </div>
                   </div>
                 </div>
@@ -74,7 +101,7 @@
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio fugit eligendi iste omnis. Eius error voluptatibus ratione explicabo adipisci tempore, quis eaque, iure at praesentium ad quod natus vero minus?</p>
                       </div>
                     </div>
                   </div>
@@ -86,7 +113,7 @@
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dolor optio magni provident tenetur labore repellendus sunt dolores ut fugiat officiis sint nostrum impedit, dignissimos aliquam voluptates ipsum voluptas dolorum?</p>
                       </div>
                     </div>
                   </div>
