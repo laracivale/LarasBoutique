@@ -216,6 +216,17 @@ header nav {
     background-color: rgba(0, 0, 0, 0.692);
 }
 
+.mostrar-mas {
+    display: block;
+    text-align: center;
+    border: 1px solid gray;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding:7px;
+}
+
 /*ACERCA DE*/
 
 .acerca-de {
@@ -322,6 +333,7 @@ footer {
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: auto;
     }
+    .botas-marrones {display: none;}
 }
 
 @media screen and (max-width: 760px){
@@ -354,6 +366,9 @@ footer {
     .grid-ofertas {
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: auto;
+    }
+    .botas-bajitas{
+        display: none;
     }
     .navbar-brand {
         font-size: 25px;
