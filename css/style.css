@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap');
 
-*{margin: 0}
+*{margin: 0; padding: 0;}
 
 a {text-decoration: none;}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 /*HEADER*/ 
 
@@ -45,14 +51,19 @@ header nav {
     align-items: center;
 }
 
-.hero h2{
+.hero h1{
     font-size: 70px;
     color: black;
     padding: 10px;
     border: 1px black solid;
 }
 
-.tienda {margin-bottom: 70px;}
+.tienda {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 .tienda img {
     height: 350px;
@@ -62,8 +73,9 @@ header nav {
     display: inline-block;
     width: 500px;
     margin: 50px 50px 0 50px;
+    
 }
-.conocenos h3 { 
+.conocenos h2 { 
     font-size: 30px;
 }
 
@@ -79,7 +91,7 @@ header nav {
     margin: 10px 10px 50px 10px;
     height: 430px;
 }
-.productos-destacados h4 {
+.productos-destacados h3 {
     font-size: 20px;
     margin: 10px;
 }
@@ -92,12 +104,16 @@ header nav {
     border-radius: 8px;
 }
 
+.productos-destacados a:hover{
+    background-color: rgba(0, 0, 0, 0.692);
+}
+
 .productos-destacados img {
     width: 300px;
     height: 340px;
 }
 
-.productos-destacados h3 {
+.productos-destacados h2 {
     background-color: black;
     color: white;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -106,27 +122,13 @@ header nav {
     margin: 30px 0 30px 0;
 }
 
-.productos {
-    font-size: 30px;
-    font-weight: 500;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 25px 25px 10px;
-    text-align: center;
-}
-
 .ropa { 
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
     text-align: center; 
-}
-
-.ropa h3 {
-    font-size: 25px;
-    font-family:'Times New Roman', Times, serif;
-    padding: 5px;
-    margin: 40px 0 40px 0;
-    background-color: rgba(165, 86, 180, 0.404);
 }
 
 .ropa div{
@@ -142,7 +144,7 @@ header nav {
     object-fit: cover;
 }
 
-.ropa h4 {
+.ropa h1 {
     font-size: 22px;
     margin: 10px;
 }
@@ -155,6 +157,10 @@ header nav {
     font-size: 17px;
     margin: 10px;
  }
+
+ .ropa a:hover{
+    background-color: rgba(0, 0, 0, 0.692);
+}
 
  .ofertas {
     text-align: center;
@@ -187,7 +193,7 @@ header nav {
     position: relative;
 }
 
-.grid-item h4 {
+.grid-item h2 {
     position: absolute;
     top: 0;
     font-style: italic;
@@ -207,7 +213,7 @@ header nav {
     margin: 30px;
 }
 
-.info h3 {
+.info-titulo{
     font-size: 20px;
     margin: 15px 15px 15px 0;
 }
@@ -216,10 +222,20 @@ header nav {
     font-size: 17px;
 }
 
-.consulta h2 {
-    padding: 10px;
+.consulta {
+    margin: 30px
 }
-.consulta div{
+
+.consulta h1 {
+    font-size: 22px;
+}
+
+.consulta h2 {
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 20px;;
+}
+.consulta div{ 
     margin: 17px;
 }
 
@@ -228,16 +244,41 @@ header nav {
 footer { 
     background-color:mediumpurple;
     padding: 20px;
+    margin-top: auto;
 }
 
-.locales {
+.footer { 
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
+}
+
+.locales h3 {
+    font-size: 20px;
+}
+
+.suscribirme {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.locales h5 {
-    font-size: 20px;
+.suscribirme label {
+    font-weight: 600;
+    font-size: 17px;
+    margin: 5px;
+}
+
+.suscribirme a{
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+}
+
+.suscribirme a:hover {
+    background-color: black;
+    color: white;
 }
 
 .redes-sociales {
