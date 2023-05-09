@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
 }
 
-/*HEADER*/ 
+/*HEADER*/
 
 header {
     background-color:mediumpurple;
@@ -37,7 +37,7 @@ header nav {
     font-size: 17px;
 }
 
-/*MAIN*/
+/*INDEX*/
 
 .hero {
     background-image: url(../img/newin.jpg);
@@ -59,14 +59,14 @@ header nav {
 }
 
 .tienda {
-    margin-bottom: 70px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .tienda img {
-    height: 350px;
+    height: 400px;
+    width: 500px;
 }
 
 .conocenos {
@@ -83,10 +83,17 @@ header nav {
     font-size: 20px;
 }
 
-.productos-destacados {text-align: center;}
+.productos-destacados {
+    text-align: center;
+}
 
-.productos-destacados div {
-    display: inline-block;
+.imagenespd {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.productos-destacados div div{
     border: 2px black solid;
     margin: 10px 10px 50px 10px;
     height: 430px;
@@ -111,6 +118,7 @@ header nav {
 .productos-destacados img {
     width: 300px;
     height: 340px;
+    object-fit: cover;
 }
 
 .productos-destacados h2 {
@@ -121,6 +129,8 @@ header nav {
     font-style: italic;
     margin: 30px 0 30px 0;
 }
+
+/*PRODUCTOS*/
 
 .ropa { 
     display: flex;
@@ -162,6 +172,8 @@ header nav {
     background-color: rgba(0, 0, 0, 0.692);
 }
 
+/*OFERTAS*/
+
  .ofertas {
     text-align: center;
     font-size: 45px;
@@ -174,7 +186,7 @@ header nav {
 .grid-ofertas {
     width: 100%;;
     display: grid;
-    grid-auto-rows: 400px;
+    grid-auto-rows: auto;
     grid-template-columns: repeat(4,1fr);
     gap: 15px;
     margin-bottom: 30px;
@@ -198,10 +210,13 @@ header nav {
     top: 0;
     font-style: italic;
     width: 100%;
+    font-size: 25px;
     color: white;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.692);
 }
+
+/*ACERCA DE*/
 
 .acerca-de {
     text-align: center;
@@ -221,6 +236,8 @@ header nav {
 .info p {
     font-size: 17px;
 }
+
+/*CONTACTO*/
 
 .consulta {
     margin: 30px
@@ -256,6 +273,10 @@ footer {
     font-size: 20px;
 }
 
+.locales ul li {
+    font-size: 16px;
+}
+
 .suscribirme {
     display: flex;
     justify-content: center;
@@ -289,4 +310,100 @@ footer {
 
 .redes-sociales img {
     margin: 5px;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 960PX){
+    .tienda {
+        flex-direction: column;
+    }
+    .grid-ofertas {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .tienda img {
+        height: 350px;
+        width: 450px;
+    }
+    .conocenos h2 {
+        font-size: 25px;}
+    .conocenos p {
+        font-size: 15px;}
+    .footer {
+        flex-direction: column;
+    }
+    .redes-sociales {
+        margin: 10px;
+    }
+    .hero{
+        height: 300px;
+    }
+    .hero h1 {
+        font-size: 60px;
+    }
+    .ofertas{
+        font-size: 35px;
+    }
+    .grid-item h2{
+        font-size: 20px;
+    }
+    .grid-ofertas {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .nav-link {
+        font-size: 15px;;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .hero {
+        height: 250px;
+    }
+    .hero h1{
+        font-size: 50px;
+    }
+    .tienda img{
+        height: 300px;
+        width: 400px;
+    }
+    .conocenos h2{
+        font-size: 20px;
+    }
+    .conocenos p{
+        font-size: 13px;
+    }
+    .productos-destacados h2 {
+        font-size: 21px;
+    }
+    .productos-destacados a {
+        font-size: 15px;
+    }
+    .productos-destacados h3{
+        font-size: 18px;
+    }
+    .locales h3{
+        font-size: 18px;
+    }
+    .locales ul li {
+        font-size: 14px;
+    }
+    .suscribirme label {
+        font-size: 15px;
+    }
+    .suscribirme a{
+        font-size: 14px;
+    }
+    .grid-ofertas {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 }
