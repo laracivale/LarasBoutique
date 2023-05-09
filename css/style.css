@@ -11,6 +11,7 @@ header {
     padding: 20px;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 header h1 {
@@ -129,7 +130,7 @@ header nav ul li a {
 
 .ropa div{
     display: inline-block;
-    margin: 15px;
+    margin: 10px;
     height: 410px;
     border: 2px black solid;
 }
@@ -156,29 +157,42 @@ header nav ul li a {
  .ofertas {
     text-align: center;
     font-size: 45px;
+    font-weight: 800;
+    font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 20px;
+    margin: 30px;
 }
 
-.descuentos h3 {
-    font-size: 35px;
-    padding: 30px;
+.grid-ofertas {
+    width: 100%;;
+    display: grid;
+    grid-auto-rows: 400px;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    margin-bottom: 30px;
 }
 
-.descuentos h4 {
-    font-size: 25px;
+.grid-ofertas div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.49);
+    -moz-box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.49);
+}
+
+.grid-item {
+    position: relative;
+}
+
+.grid-item h4 {
+    position: absolute;
+    top: 0;
+    font-style: italic;
+    width: 100%;
     color: white;
-    background-color: black;
-    padding: 4px;
-}
-
-.descuentos div {
-    display: inline-block;
-    margin: 5px 5px 40px 5px;
-}
-.descuentos img{ 
-    height: 350px;
-    width: 320px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.692);
 }
 
 .acerca-de {
@@ -188,18 +202,19 @@ header nav ul li a {
 }
 
 .info {
-    margin: 15px;
+    margin: 30px;
 }
 
 .info h3 {
     font-size: 20px;
+    margin: 15px 15px 15px 0;
 }
 
 .info p {
     font-size: 17px;
 }
 
- .consulta h2 {
+.consulta h2 {
     padding: 10px;
 }
 .consulta div{
