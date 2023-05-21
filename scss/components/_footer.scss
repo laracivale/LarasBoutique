@@ -1,0 +1,54 @@
+footer { 
+    background-color:mediumpurple;
+    padding: 20px;
+    margin-top: auto;
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        .locales{
+            div{
+                h3{
+                    font-size: 20px;
+                }
+                ul{
+                    li{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .suscribirme{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            label{
+                font-weight: 600;
+                font-size: 17px;
+                margin: 5px;
+            }
+            a{
+                margin: 5px;
+                border: 1px solid black;
+                border-radius: 5px;
+                color: black;
+                padding: 5px;
+                &:hover{
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+        .redes-sociales{
+            display: flex;
+            justify-content: right;
+            align-items: end;
+            a{
+                img{
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
+
+    
