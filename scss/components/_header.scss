@@ -1,25 +1,25 @@
 header{
-    background-color:mediumpurple;
+    background-color: nth($colores, 1);
     padding: 22px;
     position: sticky;
     top: 0;
     z-index: 10;
     nav{
-        background-color: mediumpurple;
+        background-color: nth($colores, 1);
         div{
             .navbar-brand{
-                font-size: 30px;
+                font-size: nth($font-size, 1);
                 padding: 6px;
-                font-family: 'Raleway', sans-serif;
-                font-style: italic;
-                background-color: rgba(242, 242, 248, 0.603);
+                font-family: nth($font-family, 1);
+                font-style: $font-style;
+                background-color: nth($colores, 4);
                 border-radius: 10px;
             }
             div{
                 ul{
                     li{
                         .nav-link{
-                            font-size: 17px;
+                            font-size: nth($font-size, 2);
                         }
                     }
                 }

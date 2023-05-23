@@ -8,40 +8,36 @@ footer {
         .locales{
             div{
                 h3{
-                    font-size: 20px;
+                    font-size: nth($font-size, 3);
                 }
                 ul{
                     li{
-                        font-size: 16px;
+                        font-size: nth($font-size, 4);
                     }
                 }
             }
         }
         .suscribirme{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex (flex, center, center);
             label{
                 font-weight: 600;
-                font-size: 17px;
+                font-size: nth($font-size, 2);
                 margin: 5px;
             }
             a{
                 margin: 5px;
-                border: 1px solid black;
+                border: 1px solid nth($colores, 2);
                 border-radius: 5px;
-                color: black;
+                color: nth($colores, 2);
                 padding: 5px;
                 &:hover{
-                    background-color: black;
+                    background-color: nth($colores, 2);
                     color: white;
                 }
             }
         }
         .redes-sociales{
-            display: flex;
-            justify-content: right;
-            align-items: end;
+            @include flex (flex, right, end);
             a{
                 img{
                     margin: 5px;

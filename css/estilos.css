@@ -22,7 +22,7 @@ header {
     header nav div .navbar-brand {
       font-size: 30px;
       padding: 6px;
-      font-family: 'Raleway', sans-serif;
+      font-family: "Raleway";
       font-style: italic;
       background-color: rgba(242, 242, 248, 0.603);
       border-radius: 10px; }
@@ -37,9 +37,9 @@ main .hero {
   background-attachment: fixed;
   height: 400px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
   main .hero a h1 {
     font-size: 70px;
     color: black;
@@ -67,13 +67,14 @@ main .productos-destacados {
   main .productos-destacados h2 {
     background-color: black;
     color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: sans-serif;
     font-size: 25px;
     font-style: italic;
     margin: 30px 0 30px 0; }
   main .productos-destacados .imagenes-pd {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap; }
     main .productos-destacados .imagenes-pd div {
       border: 2px black solid;
@@ -98,9 +99,9 @@ main .productos-destacados {
 /*PRODUCTOS*/
 main .ropa {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
   text-align: center; }
   main .ropa div {
@@ -130,7 +131,7 @@ main .ofertas {
   font-size: 45px;
   font-weight: 800;
   font-style: italic;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Cambria;
   margin: 30px; }
 
 main .grid-ofertas {

@@ -1,0 +1,32 @@
+$font-style: italic; 
+
+$colores:
+mediumpurple,
+black,
+rgba(0, 0, 0, 0.692),
+rgba(242, 242, 248, 0.603);
+
+$font-family:
+'Raleway', sans-serif,
+Cambria, Cochin, Georgia, Times, 'Times New Roman', serif,
+'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+$font-size:
+30px,
+17px,
+20px,
+16px,
+70px,
+25px,
+18px,
+22px,
+45px;
+
+
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
