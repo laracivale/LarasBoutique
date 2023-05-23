@@ -7,6 +7,7 @@ main{
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        background-position: center;
         height: 400px;
         @include flex (flex, center, center);
         flex-direction: column;
@@ -21,14 +22,15 @@ main{
     }
     .tienda{
         @include flex (flex, space-evenly, center);
-        img{
-            height: 400px;
-            width: 500px;
-        }
         .conocenos{
             display: inline-block;
             width: 500px;
-            margin: 50px 50px 0 50px;
+            margin: 30px 30px 0 30px;
+            img{
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
             h2{
                 font-size: nth($font-size, 1); 
             }
@@ -193,7 +195,7 @@ main{
         margin: 30px;
         text-align: center;
         h1{
-            font-size: 22px;
+            font-size: nth($font-size, 8);
         }
         h2{
             padding-top: 20px;
