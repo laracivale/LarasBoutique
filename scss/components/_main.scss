@@ -17,6 +17,10 @@ main{
                 color: nth($colores, 2);
                 padding: 10px;
                 border: 1px nth($colores, 2) solid;
+                transition-duration: 1.5s;
+                &:hover{
+                    transform:scale(1.2);
+                }  
             }
         }
     }
@@ -56,6 +60,10 @@ main{
                 border: 2px nth($colores, 2) solid;
                 margin: 10px 10px 50px 10px;
                 height: 430px;
+                transition-duration: 1s;
+                &:hover{
+                    transform: scale(1.1);
+                }
                 img{
                     width: 300px;
                     height: 340px;
@@ -71,6 +79,7 @@ main{
                     color: white;
                     padding: 6px;
                     border-radius: 8px;
+                    transition: 0.5s;
                     &:hover{
                         background-color: nth($colores, 3);
                     }
@@ -92,6 +101,10 @@ main{
             margin: 20px;
             height: 420px;
             border: 2px nth($colores, 2) solid;
+            transition: 1.2s;
+            &:hover{
+                transform: scale(1.05);
+            }
             img{
                 width: 300px;
                 height: 330px;
@@ -108,6 +121,7 @@ main{
                 border-radius: 8px;
                 font-size: nth($font-size, 2);
                 margin: 10px;
+                transition: 0.5s;
                 &:hover{
                     background-color: nth($colores, 3);
                 }

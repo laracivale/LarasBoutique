@@ -45,7 +45,10 @@ main .hero {
     font-size: 70px;
     color: black;
     padding: 10px;
-    border: 1px black solid; }
+    border: 1px black solid;
+    transition-duration: 1.5s; }
+    main .hero a h1:hover {
+      transform: scale(1.2); }
 
 main .tienda {
   display: flex;
@@ -81,7 +84,10 @@ main .productos-destacados {
     main .productos-destacados .imagenes-pd div {
       border: 2px black solid;
       margin: 10px 10px 50px 10px;
-      height: 430px; }
+      height: 430px;
+      transition-duration: 1s; }
+      main .productos-destacados .imagenes-pd div:hover {
+        transform: scale(1.1); }
       main .productos-destacados .imagenes-pd div img {
         width: 300px;
         height: 340px;
@@ -94,7 +100,8 @@ main .productos-destacados {
         background-color: black;
         color: white;
         padding: 6px;
-        border-radius: 8px; }
+        border-radius: 8px;
+        transition: 0.5s; }
         main .productos-destacados .imagenes-pd div a:hover {
           background-color: rgba(0, 0, 0, 0.692); }
 
@@ -109,7 +116,10 @@ main .ropa {
   main .ropa div {
     margin: 20px;
     height: 420px;
-    border: 2px black solid; }
+    border: 2px black solid;
+    transition: 1.2s; }
+    main .ropa div:hover {
+      transform: scale(1.05); }
     main .ropa div img {
       width: 300px;
       height: 330px;
@@ -123,7 +133,8 @@ main .ropa {
       color: white;
       border-radius: 8px;
       font-size: 17px;
-      margin: 10px; }
+      margin: 10px;
+      transition: 0.5s; }
       main .ropa div a:hover {
         background-color: rgba(0, 0, 0, 0.692); }
 
