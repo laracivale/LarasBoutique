@@ -106,6 +106,12 @@ main .productos-destacados {
           background-color: rgba(0, 0, 0, 0.692); }
 
 /*PRODUCTOS*/
+main .titulo-ropa {
+  text-align: center;
+  padding: 30px;
+  font-family: "Raleway";
+  font-style: italic; }
+
 main .ropa {
   display: flex;
   justify-content: space-evenly;
@@ -124,7 +130,7 @@ main .ropa {
       width: 300px;
       height: 330px;
       object-fit: cover; }
-    main .ropa div h1 {
+    main .ropa div h2 {
       font-size: 22px;
       margin: 10px; }
     main .ropa div a {
@@ -196,6 +202,22 @@ main .info {
     margin: 15px 15px 15px 0; }
   main .info p {
     font-size: 17px; }
+    main .info p img {
+      margin: 7px; }
+    main .info p .mastercard {
+      width: 32px;
+      height: 20px; }
+    main .info p .mercado-pago {
+      width: 70px;
+      height: 23px; }
+    main .info p .modo {
+      width: 70px;
+      height: 18px; }
+    main .info p .pago-facil {
+      width: 32px;
+      height: 30px; }
+    main .info p span {
+      text-decoration: underline; }
 
 /*CONTACTO*/
 main .consulta {
@@ -207,8 +229,13 @@ main .consulta {
     padding-top: 20px;
     padding-left: 10px;
     font-size: 20px; }
-  main .consulta div {
-    margin: 17px; }
+  main .consulta form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    main .consulta form div {
+      margin: 10px; }
 
 footer {
   background-color: mediumpurple;
@@ -219,8 +246,9 @@ footer {
     justify-content: space-between; }
     footer .footer .locales div h3 {
       font-size: 20px; }
-    footer .footer .locales div ul li {
-      font-size: 16px; }
+    footer .footer .locales div ul li a {
+      font-size: 16px;
+      color: black; }
     footer .footer .suscribirme {
       display: flex;
       justify-content: center;
